@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="create-shop-users-table" author="student">
+        <createTable tableName="shop_users">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="login" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-products-table" author="student">
+        <createTable tableName="products">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="price" type="DOUBLE"/>
+            <column name="quantity" type="INTEGER"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-blacklists-table" author="student">
+        <createTable tableName="blacklists">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+        <addForeignKeyConstraint baseTableName="blacklists" baseColumnNames="user_id"
+                                 constraintName="fk_user_id" referencedTableName="shop_users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+
+
+    <changeSet id="alter-shop-users-table" author="student">
+        <addColumn tableName="shop_users">
+            <column name="cart_id" type="BIGINT"/>
+            <column name="blacklist_id" type="BIGINT"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="alter-products-table" author="student">
+        <addColumn tableName="products">
+            <column name="image_url" type="VARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="create-orders-table" author="student">
+        <createTable tableName="orders">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="cart_id" type="BIGINT"/>
+            <column name="order_date" type="TIMESTAMP"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-carts-table" author="student">
+        <createTable tableName="carts">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+            <column name="total_price" type="DOUBLE"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="create-cart-items-table" author="student">
+        <createTable tableName="cart_items">
+            <column name="cart_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+            <column name="quantity" type="INTEGER"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="add-foreign-keys" author="student">
+        <addForeignKeyConstraint baseTableName="shop_users" baseColumnNames="cart_id"
+                                 constraintName="fk_cart_id" referencedTableName="carts"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="shop_users" baseColumnNames="blacklist_id"
+                                 constraintName="fk_blacklist_id" referencedTableName="blacklists"
+                                 referencedColumnNames="id"
+                                 onUpdate="CASCADE" onDelete="CASCADE"/>
+        <addForeignKeyConstraint baseTableName="orders" baseColumnNames="user_id"
+                                 constraintName="fk_orders_user_id" referencedTableName="shop_users"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="orders" baseColumnNames="cart_id"
+                                 constraintName="fk_orders_cart_id" referencedTableName="carts"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="carts" baseColumnNames="user_id"
+                                 constraintName="fk_carts_user_id" referencedTableName="shop_users"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="cart_items" baseColumnNames="cart_id"
+                                 constraintName="fk_cart_items_cart_id" referencedTableName="carts"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="cart_items" baseColumnNames="product_id"
+                                 constraintName="fk_cart_items_product_id" referencedTableName="products"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="insert-shop-users-data" author="student">
+        <insert tableName="shop_users">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="John Doe"/>
+            <column name="login" value="johndoe"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-products-data" author="student">
+        <insert tableName="products">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Product 1"/>
+            <column name="description" value="This is product 1"/>
+            <column name="price" valueNumeric="9.99"/>
+            <column name="quantity" valueNumeric="10"/>
+            <column name="image_url" value="https://example.com/product1.jpg"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-blacklists-data" author="student">
+        <insert tableName="blacklists">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_id" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-carts-data" author="student">
+        <insert tableName="carts">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_id" valueNumeric="1"/>
+            <column name="total_price" valueNumeric="0.0"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-orders-data" author="student">
+        <insert tableName="orders">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_id" valueNumeric="1"/>
+            <column name="cart_id" valueNumeric="1"/>
+            <column name="order_date" valueDate="2024-05-17T00:00:00"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-cart-items-data" author="student">
+        <insert tableName="cart_items">
+            <column name="cart_id" valueNumeric="1"/>
+            <column name="product_id" valueNumeric="1"/>
+            <column name="quantity" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+
+
+
+</databaseChangeLog>
