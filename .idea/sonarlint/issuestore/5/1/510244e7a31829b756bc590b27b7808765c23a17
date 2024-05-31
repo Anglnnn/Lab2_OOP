@@ -1,0 +1,5 @@
+
+¶
+java:S6204("zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹J$31a4ae64-710e-4165-9d8a-523f65331ec9
+ƒ
+java:S16121"GReplace this lambda with method reference 'UserNotFoundException::new'.(­ò§¢J$960627f8-c934-472e-b89b-d89803fe10e9

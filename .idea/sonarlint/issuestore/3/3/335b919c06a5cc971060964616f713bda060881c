@@ -1,0 +1,19 @@
+
+~	java:S125"<This block of commented-out lines of code should be removed.(éÛ×İ8³…äø1J$cdb7dec7-158d-45fb-b861-0bf64af742c9
+z
+java:S1128"7Remove this unused import 'com.example.testest.entity'.(½²ã”8µ…äø1J$b5c6e12d-8c4c-4a31-ad78-83cb92350fca
+ƒ
+java:S1128";Remove this unused import 'com.example.testest.repository'.(÷ê÷‚ûÿÿÿÿ8µ…äø1J$f6b8964d-c3e0-4d3b-af98-b9579b663e80
+›
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8µ…äø1J$bf72e63e-4993-4157-b71f-b101dc5332b1
+Š
+java:S1128"GRemove this unused import 'org.springframework.boot.CommandLineRunner'.(È—ÿÅ8µ…äø1J$6894beed-baa1-4983-bd4c-df88031d2e17
+
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8µ…äø1J$cdbec997-0076-4336-b5ca-fd9f81d873e3
+|
+java:S1128	"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8µ…äø1J$6262cfb8-093e-4086-9e35-768e2a838578
+v
+java:S1128
+".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8µ…äø1J$3ec3cd5f-669e-47ca-8c44-42ab6cb3a693
+r
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8µ…äø1J$684e0ff6-65b1-4227-8d55-6d9f3fe440be

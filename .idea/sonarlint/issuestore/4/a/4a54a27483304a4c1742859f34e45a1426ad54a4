@@ -1,0 +1,22 @@
+
+ƒ
+java:S18540";Remove this useless assignment to local variable "newCart".(¿¼››üÿÿÿÿ8µšµÔù1J$5b817e45-3462-4e6d-9049-40fc27e2703e
+t
+java:S14810",Remove this unused "newCart" local variable.(¿¼››üÿÿÿÿ8¸šµÔù1J$12e83e52-8e6d-42fa-8d9b-95e144ea428a
+~
+java:S1128
+"6Remove this unused import 'javax.ws.rs.core.Response'.(ˆäĞæüÿÿÿÿ8ş¿‚ú1J$07575cba-878f-43db-96dd-7869fe2d7281
+
+java:S1128"MRemove this unused import 'org.keycloak.admin.client.resource.RealmResource'.(çÌØÅ8ş¿‚ú1J$9f7d2f6d-dc99-4bb2-8c9e-77a02cafee28
+•
+java:S1128"MRemove this unused import 'org.keycloak.admin.client.resource.UsersResource'.(ñÀËøÿÿÿÿ8ÿ¿‚ú1J$9b7fef58-531d-4b6c-815a-4914e9f6d7bb
+™
+java:S1128"VRemove this unused import 'org.keycloak.representations.idm.CredentialRepresentation'.(Íö¨8ÿ¿‚ú1J$0f446dc6-f6e7-4f1e-abf2-fa5adcc4d9f6
+“
+java:S1128"PRemove this unused import 'org.keycloak.representations.idm.UserRepresentation'.(ã×î¿8ÿ¿‚ú1J$ca123af1-9af2-42c6-be86-3c81f01b0b59
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÿ¿‚ú1J$f0161e35-e485-41ff-87f5-606f69aa8d41
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÿ¿‚ú1J$063a4c0c-3bef-4a36-9683-60a1e3ec1382
+y
+java:S1068"6Remove this unused "keycloakProperties" private field.(§óôÀ8ÿ¿‚ú1J$ec906a91-fc9e-4951-bd51-5d4236e1b838

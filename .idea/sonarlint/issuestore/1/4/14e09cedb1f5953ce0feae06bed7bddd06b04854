@@ -1,0 +1,21 @@
+
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(õÒÿ ıÿÿÿÿ8å¼ººù1J$ffc6bc4b-8d62-478e-a02f-0148ebb29eac
+‘
+java:S1128"NRemove this unused import 'com.example.testest.configuration.KeycloakManager'.(Ûí£í8æ¼ººù1J$8a627702-cd02-439f-b92a-8acaf49b15dd
+™
+java:S1128"QRemove this unused import 'com.example.testest.configuration.KeycloakProperties'.(×¢ÿ¦ıÿÿÿÿ8æ¼ººù1J$32a22f8f-e23f-47f4-af88-bf19809e48f5
+
+java:S1128"<Remove this unused import 'com.example.testest.dto.UserDTO'.(ğ¯œ 8æ¼ººù1J$1ef5ca71-7f1d-4736-b621-23c0d3bf06f9
+ƒ
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8æ¼ººù1J$6f15f7c3-65f8-46cb-bece-6217754dcdf9
+”
+java:S1128"LRemove this unused import 'org.keycloak.admin.client.resource.UserResource'.(‘¼—ªÿÿÿÿÿ8æ¼ººù1J$3d978927-18b1-4982-b159-27c2ff4d844c
+“
+java:S1128"PRemove this unused import 'org.keycloak.representations.idm.UserRepresentation'.(ã×î¿8æ¼ººù1J$133f982b-495c-4adf-a858-d498fc6c2702
+†
+java:S1128	"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡Ú8æ¼ººù1J$50dfd88a-c676-4983-b898-90c03ec0ce7e
+s
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8æ¼ººù1J$0596b6fa-7c85-4757-8f51-9fc453cf9234
+€
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ç¼ººù1J$cea3ca87-3550-4654-8a17-5d482e0e9960

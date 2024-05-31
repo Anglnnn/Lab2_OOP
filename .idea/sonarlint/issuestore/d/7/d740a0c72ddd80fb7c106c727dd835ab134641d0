@@ -1,0 +1,5 @@
+
+~
+java:S1126"BReplace this if-then-else statement by a single method invocation.(æöÝ—J$8e8c96b0-b6d8-452a-b881-cb41ee559599
+¶
+java:S6204'"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹J$df3f41b8-3594-455e-b51d-aac40860bb0e
